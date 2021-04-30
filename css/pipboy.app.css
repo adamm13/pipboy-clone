@@ -4,4 +4,12 @@
   position: relative;
   max-height: 300px;
   margin-top: 10px;
+  filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(1.2);
+}
+
+.pip-footer{
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 20px);
+    margin: 10px;
 }
