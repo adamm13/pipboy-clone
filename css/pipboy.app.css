@@ -1,0 +1,7 @@
+.center-image img {
+  margin: auto;
+  display: block;
+  position: relative;
+  max-height: 300px;
+  margin-top: 10px;
+}
