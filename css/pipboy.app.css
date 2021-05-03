@@ -92,6 +92,12 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
   width: 100%;
 }
 
+.center-image {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
 .center-image img {
   margin: auto;
   display: block;
@@ -163,4 +169,9 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
 .navbar.pip-footer .col-6{
     margin: 0 5px;
     flex: 0 0 48%;
+}
+
+.stat-bar {
+  width: 60px;
+  margin: auto;
 }
