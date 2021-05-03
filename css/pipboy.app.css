@@ -1,4 +1,10 @@
+@font-face {
+  font-family: Pipboy;
+  src: url('../monofonto.ttf')
+}
+
 body {
+    font-family: Pipboy, sans-serif;
     color: #14fe17;
     background: #272b23;
 }
