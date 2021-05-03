@@ -94,8 +94,7 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
 
 .center-image {
   position: absolute;
-  margin: auto;
-  width: 100%;
+  margin-left: 100px;
 }
 
 .center-image img {
@@ -103,7 +102,8 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
   display: block;
   position: relative;
   max-height: 300px;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: -10px;
   filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(1.2);
 }
 
@@ -174,4 +174,14 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
 .stat-bar {
   width: 60px;
   margin: auto;
+}
+
+#status {
+  max-width: 400px;
+  margin: auto;
+}
+
+.stat-bars > .row {
+  margin-bottom: 100px;
+
 }
