@@ -108,6 +108,10 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
     margin: 10px;
 }
 
+.navbar.navbar-light .navbar-nav{
+    margin: 0px 200px;
+}
+
 .navbar.navbar-light .navbar-nav > li {
     padding: 0px 20px;
 }
