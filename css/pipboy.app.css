@@ -9,6 +9,19 @@ body {
     background: #272b23;
 }
 
+body::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    z-index: 1000000;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient( 0deg, rgba(0,0,0,.5) , rgba(0,0,0,.4) 1px, transparent 1px, transparent 2px);
+    opacity: .2;
+    pointer-events:none;
+}
+
 .navbar {
   border-bottom: 2px solid;
   margin: 0px, 10px;
@@ -35,11 +48,38 @@ body {
 
 ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
   color: #14fe17 !important;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+    z-index: 50;
+    position: relative;
+    background:#272b23;
 }
 
+.navbar-item.active::before {
+    content: "";
+    position: absolute;
+    background: #272b23;
+    width: 100%;
+    height: 18px;
+    top: 22px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    left: 0px;
+}
+
+
 .navbar-light .navbar-nav > li.nav-item > .nav-link,
-.navbar-light .navbar-nav > li.nav-item.active > .nav-link {
-  text-align: center;
+.navbar-light .navbar-nav > li.navbar-item > .nav-link {
+    text-align: center;
+    margin:auto;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+    z-index: 50;
+    position: relative;
+    background: #272b23;
 }
 
 .navbar-nav {
@@ -66,4 +106,57 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
     bottom: 0;
     width: calc(100% - 20px);
     margin: 10px;
+}
+
+.navbar.navbar-light .navbar-nav > li {
+    padding: 0px 20px;
+}
+
+.nav.nav-tabs{
+    margin: 20px;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: 1px solid transparent;
+} 
+.nav.nav-tabs > li > a {
+    font-size: 26px !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    padding: 5px 10px;
+}
+
+.nav.nav-tabs > li:nth-child(2) > a{
+    opacity: .5;
+}
+.nav.nav-tabs > li:nth-child(3) > a{
+    opacity: .2;
+}
+
+.level-progress{
+    width: 70%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.level-progress-indicator {
+    height: 6px;
+    background: #14fe17;
+    width: 70%;
+    position: relative;
+}
+
+.navbar.navbar-light.pip-footer {
+    border:none;
+}
+
+.navbar.pip-footer .col-3, .navbar.pip-footer .col-6{
+    background: rgba( 15, 255, 0, 0.15);
+}
+
+.navbar.pip-footer .col-6{
+    margin: 0 5px;
+    flex: 0 0 48%;
 }
