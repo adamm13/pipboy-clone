@@ -160,10 +160,12 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
 
 .navbar.navbar-light.pip-footer {
     border:none;
+    font-size: 22px;
 }
 
 .navbar.pip-footer .col-3, .navbar.pip-footer .col-6{
     background: rgba( 15, 255, 0, 0.15);
+    padding: 5px 10px;
 }
 
 .navbar.pip-footer .col-6{
@@ -176,7 +178,7 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
   margin: auto;
 }
 
-#status {
+.tab-content {
   max-width: 400px;
   margin: auto;
 }
@@ -184,4 +186,32 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, a {
 .stat-bars > .row {
   margin-bottom: 100px;
 
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w90 {
+  width: 90%;
 }
